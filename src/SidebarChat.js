@@ -10,33 +10,25 @@ function SidebarChat({addNewChat, id, name}) {
     const [seed,setSeed] = useState("");
     const [Messages, setMessages] = useState("");
     
-
-    function getMessagewithID() {
-        const collectionRef = query(collection(db,`rooms/${id}`, "messages"), orderBy("timeStamp","desc"));
-
-        onSnapshot(collectionRef, (collectionSnap)=>{
-            const allmessages = [];
-            collectionSnap.forEach((doc)=>{
-                allmessages.push(doc.data());
-            });
-            setMessages(allmessages);
-        },
-
-        (error)=>{
-            console.log(error);
-        }
-        )
-
-
-
-    };
-
     useEffect(()=>{
        
         setSeed(id);
         if(id)
         {
-            getMessagewithID();
+            const collectionRef = query(collection(db,`rooms/${id}`, "messages"), orderBy("timeStamp","desc"));
+
+            onSnapshot(collectionRef, (collectionSnap)=>{
+                const allmessages = [];
+                collectionSnap.forEach((doc)=>{
+                    allmessages.push(doc.data());
+                });
+                setMessages(allmessages);
+            },
+    
+            (error)=>{
+                console.log(error);
+            }
+            );
         }
 
         
@@ -79,7 +71,7 @@ function SidebarChat({addNewChat, id, name}) {
     </div>
 ): (
     <div className='sidebarChat' onClick={createChat}>
-        <h2>Add New Chat</h2>
+        <h2>Add New Room</h2>
     </div>
 );
 }

@@ -65,8 +65,7 @@ export default function Chat() {
       
         if (roomid.roomid) {
           getDatawithID();
-          getMessagewithID()
-          console.log(userData.user.reloadUserInfo.displayName);
+          getMessagewithID();
         }
       
         return () => {
@@ -88,7 +87,6 @@ export default function Chat() {
             timeStamp: serverTimestamp()
         });
 
-        console.log("New Message ID: ", newMsgRef.id);
     
     }
 

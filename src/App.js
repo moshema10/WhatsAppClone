@@ -2,7 +2,7 @@ import './App.css';
 import Sidebar from './Sidebar';
 import Chat from './Chat';
 import { Routes, Route } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import LoginScreen from './LoginScreen';
 import { useUserContext } from './UserContext.js';
 
