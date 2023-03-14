@@ -81,7 +81,7 @@ export default function Chat() {
     
 
     async function addMessage(){
-        const newMsgRef = await addDoc(collection(db,`rooms/${roomid.roomid}`,"messages"),{
+        await addDoc(collection(db,`rooms/${roomid.roomid}`,"messages"),{
             message: input,
             name: userData.user.reloadUserInfo.displayName,
             timeStamp: serverTimestamp()
