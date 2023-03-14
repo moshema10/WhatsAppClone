@@ -2,7 +2,7 @@
 
 # Live Link
 https://whatsapp-clone-bd320.firebaseapp.com/
-# Google Chrome
+# How to use in Google Chrome
 If safe browsing enabled, disable to visit the site. **Go to settings > privacy and security**. Click **No Protection** to experience the site.
 1. ![image](https://user-images.githubusercontent.com/77507757/225160420-5f878fbf-4029-4c2e-92e7-8ac76a157ab7.png)
 2. ![image](https://user-images.githubusercontent.com/77507757/225160487-6663475e-39c8-4bb1-bb72-a6b98f1e3b63.png)
