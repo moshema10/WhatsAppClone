@@ -12,13 +12,17 @@ If safe browsing enabled, disable to visit the site. **Go to settings > privacy 
 
 # Tech Stack
 
+- Javascript
 - React
+- npm
 - Firebase Firestore Realtime DB
 - Material UI
 - React Router
 - React Context API
 - REDUX
+- Dice Bear API
 - Google Authentication
+- Firebase CLI
 - Deploy using Firebase
 
 
@@ -30,8 +34,10 @@ If safe browsing enabled, disable to visit the site. **Go to settings > privacy 
 - Add the config code to a file named firebase.js (the file is used for connecting to the DB)
 - Clean the React app
 - In CSS it follows BEM class naming conventions (Block, Element, Modifier)
-- Installed Material Ui
-- 
+- Install latest Material Ui
+- Follow the material ui documentation
+- Use css flexbox for designing layouts in the UI
+- use conditional routing based on user's login status
 
 # Tricks
 - use rfce to create a function component's template code
