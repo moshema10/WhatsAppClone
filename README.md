@@ -3,71 +3,42 @@
 # Live Link
 https://whatsapp-clone-bd320.firebaseapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech Stack
 
-## Available Scripts
+- React
+- Firebase Firestore Realtime DB
+- Material UI
+- React Router
+- React Context API
+- REDUX
+- Google Authentication
+- Deploy using Firebase
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Process
+- Create React App with npx command
+- Create a Project in Firebase
+- Add the config code to a file named firebase.js (the file is used for connecting to the DB)
+- Clean the React app
+- In CSS it follows BEM class naming conventions (Block, Element, Modifier)
+- Installed Material Ui
+- 
 
-### `npm test`
+# Tricks
+- use rfce to create a function component's template code
+- use [display : grid; place-items: center] to placing child at the center of parent both in x and y exis
+- Use IconButton from mui over icons to make it clickable
+- use {flex: 1} to stretch the flex-items to all of flex-container space
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Concepts
+## Hooks
+- Hooks itselft is a function which always starts with **use**
+- You can not put hooks inside an if statement, function, loops or in other word can not be nested inside a block
+- You can not use hooks inside a class component
+- hooks must be always stay at the top level of the functional component
+- useState() - When there is any change in the ui it is called state. to reflect to the data changes it re-renders the ui
+- useState() - Always returns an array with 2 values [count, setCount]. The first value is the state and second value is the setter function of the state
+- useState() - We can pass value to setState in two ways. One is hardcoding it useState(2) another is function. By hardcoding it runs everytime the ui renders which can slow down the computation if it is very huge calculation and the function version only runs once like the constructor
